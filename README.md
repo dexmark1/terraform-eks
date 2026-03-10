@@ -27,8 +27,11 @@ Before running this, you need:
    terraform apply -auto-approve
    ```
 2. **Verify:**
+   ```bash
    aws eks update-kubeconfig --region us-east-1 --name dex-infra-cluster
    kubectl get nodes
-
+   ```
 3. **Cleanup:**
+   ```bash
    terraform destroy -auto-approve
+   ```
